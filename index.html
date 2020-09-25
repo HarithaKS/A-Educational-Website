@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LearnWithUs | Main page</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <section id="header">
+           <div class="container">
+               <img src="images/logo.png" class="logo" >
+               <div class="header-text">
+                   <h1>The Purpose is to teach,<br>enhance learning of  the people..!<br><br></h1>
+                
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                   <button class="common-btn">Read more</button>   
+            </div>
+           </div>
+       </section>
+       <nav id="sideNav" style="right: -100px;" >
+           <ul>
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About us</a></li>
+               <li><a href="#features">Features</a></li>
+               <li><a href="#courses">Courses</a></li>
+               <li><a href="#offer">Offer</a></li>
+           </ul>
+       </nav>
+       <img src="images/menu.png" id="menuBtn">
+
+       <!----------------------------------------------------about----------------------------------------------------------------->
+       <section id="about">
+           <div class="aboutLeft">
+               <img src="images/git.svg">
+           </div>
+           <div class="aboutright">
+               <div class="about-text">
+               <h1>About us<br><br></h1>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+            </div>
+        </div>
+       </section>
+       <!-------------------------------------------------------------features---------------------------------------------------------->
+
+    <section id="features">
+        <div class="container feature-row">
+            <div class="feature-col">
+                <img src="images/idea.jpg">
+                <h4>Learn Anywhere</h4>
+                <p>Switch between your computer ,<br>tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/teacher.png">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts <br>who are passionate about teaching</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/rocket.png">
+                <h4>Unlimited Access</h4>
+                <p>Choose what you'd like to learn from <br>our extensive subscription Library</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <button class="common-btn">Start Free Trial</button> 
+        </div>
+    </section>
+
+    <!------------------------------------------------------courses--------------------------------------------------------------->
+    <section id="courses">
+        <div class="container">
+            <div class="course-left-col">
+                <div   class="course-text">
+                    <h1>Browse our top courses<br><br></h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p> 
+                </div>
+            </div>
+            <div class="course-btn">
+                <button class="common-btn">View All Courses</button> 
+            </div>
+            <div class="course-right-col">
+                <img src="images/practise.svg">
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------offer-------------------------------------------------------->
+    <section id="offer">
+        <div class="aboutLeft">
+            <img src="images/learn.svg">
+        </div>
+        <div class="aboutright">
+            <div class="about-text">
+            <h1>Limitless Offers !<br>Limitless Earnings !<br><br></h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+         </div>
+         <div class="feature-btn">
+            <button class="common-btn">Start Free Trial</button> 
+        </div>
+     </div>
+    </section>
+    <!---------------------------------------------------------------------contact--------------------------------------------------------------->
+    <section id="contact">
+        <div class="container">
+        <div class="contact-row">
+            <div class="contact-left">
+                <h1>Sign up to join our <br>learning community</h1>
+                <form>
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <input type="password" placeholder="Enter Password">
+                    <div class="btn">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------footer-------------------------------------------------------------------------------->
+    <section id="footer" >
+         <p>LearnWithUs , Copyright &copy; 2020</p>
+    </section> 
+
+<script>
+           var menuBtn = document.getElementById("menuBtn");
+           var sideNav = document.getElementById("sideNav");
+           sideNav.style.right = "-250px";
+           menuBtn.onclick = function(){
+             if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+             }
+             else{
+                sideNav.style.right = "-250px";
+             }
+           }
+       </script>
+
+    </body>
+</html>
